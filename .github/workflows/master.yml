@@ -11,13 +11,13 @@ jobs:
         uses: actions/checkout@v2
 
       - run: sudo apt-get update
-      - run: make depext-deb
+      - run: lualatex depext-deb
 
       - name: build VKR
-        run: make vkr.pdf
+        run: lualatex vkr.tex
 
       - name: build talk
-        run: make talk.pdf
+        run: lualatex talk.tex
 
       - name: Upload PDF VKR file
         uses: actions/upload-artifact@v4
