@@ -1,9 +1,9 @@
 name: Compile LaTeX
 on:
   push:
-    branches: [main, master]
+    branches: [main, diploma]
   pull_request:
-    branches: [main, master]
+    branches: [main, diploma]
 
 jobs:
   build:
